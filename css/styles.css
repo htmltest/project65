@@ -175,11 +175,11 @@ label.error:before {content:""; display:block; width:0; height:0; border-right:1
 .form-required {text-align:center}
 .form-required span {color:#f02a2a}
 
-.pager {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; padding:39px 0 6px 0}
+.pager {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; margin:34px 0 0 0}
 .pager a,
-.pager span {display:inline-block; vertical-align:top; width:38px; height:28px; margin:0 5px; border:1px solid #e5e5e5; text-align:center; color:#000; font-size:14px; line-height:28px; letter-spacing:0}
+.pager span {display:inline-block; vertical-align:top; width:38px; height:28px; margin:0 5px; border:1px solid #e5e5e5; text-align:center; color:#000; font-size:14px; line-height:28px; letter-spacing:0; text-decoration:none}
 .pager a:hover {border-color:#000}
-.pager a.active {background:#f02a2a; border-color:#f02a2a; color:#fff}
+.pager a.active {border-color:#000; font-weight:bold}
 
 .wrapper {min-width:480px; width:100%; min-height:100%; position:relative; overflow:hidden}
 .wrapper-inner {padding:0 0 325px 0}
@@ -382,7 +382,7 @@ nav ul li.active a {color:#fff; background:#000}
     .container {padding-left:55px; padding-right:55px}
 }
 
-.side {float:left; width:370px}
+.side {float:left; width:270px}
 
 @media (max-width:1199px) {
     .side {float:none; width:auto; margin:0 -30px; position:relative}
@@ -420,7 +420,7 @@ nav ul li.active a {color:#fff; background:#000}
     .side-menu-wrap-inner {position:relative; overflow:auto}
 }
 
-.side+.content {margin:0 0 0 400px}
+.side+.content {margin:0 0 0 300px}
 
 @media (max-width:1199px) {
     .side+.content {margin:0; padding:34px 0 0 0}
@@ -924,4 +924,91 @@ footer {background:#f5f5f5; height:260px; margin:-260px 0 0 0; position:relative
 
 @media (max-width:1199px) {
     .window-basket {width:370px; padding:0 28px}
+}
+
+.news-item {display:table; width:100%; border-bottom:1px solid #e6e6e6}
+.news-item-preview {display:table-cell; vertical-align:top; width:270px; padding:30px 30px 30px 0; line-height:0}
+.news-item-preview img {width:100%}
+.news-item:first-child .news-item-preview {padding-top:-15px}
+.news-item-text {display:table-cell; vertical-align:middle; padding:30px 0}
+.news-item:first-child .news-item-text {padding-top:-15px}
+.news-item-name {text-transform:uppercase; font-weight:bold; font-size:16px; color:#000}
+.news-item-name a {color:#000; text-decoration:none}
+.news-item-name a:hover {color:#f7ad00}
+.news-item-anonce {color:#000; padding:19px 0 0 0}
+.news-item-date {color:#f7ad00; padding:19px 0 0 0}
+
+@media (max-width:767px) {
+    .news-item  {display:block}
+    .news-item-preview {display:block; width:auto; padding-right:0; padding-bottom:6px}
+    .news-item-text {display:block}
+}
+
+.news-single-date {font-size:20px; color:#f7ad00; margin:-17px 0 17px 0}
+.news-single-photo {margin:17px 0 37px 0}
+.news-single-photo img {display:block; width:100%}
+.news-single:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.news-single-text {float:left; width:100%; padding:0 300px 0 0; box-sizing:border-box; color:#000}
+.news-single-others {float:left; width:270px; margin:0 0 0 -270px; padding:17px 0 0 0}
+.news-single-other {border-top:1px solid #e6e6e6; padding:17px 20px 23px 20px; margin-bottom:-1px}
+.news-single-other:first-child {border-top:none}
+.news-single-other.active {padding:16px 19px 23px 19px; border:1px solid #f7ad00; position:relative}
+.news-single-other-title a {color:#4c4c4c}
+.news-single-other-title a:hover {color:#f7ad00}
+.news-single-other.active .news-single-other-title a {color:#000; text-decoration:none; font-weight:bold}
+.news-single-other-date {color:#f7ad00}
+.news-single-photo-mobile {display:none}
+
+@media (max-width:999px) {
+    .news-single-text {float:none; width:auto; padding:0}
+    .news-single-others {display:none}
+}
+
+@media (max-width:480px) {
+    .news-single-photo {display:none}
+    .news-single-photo-mobile {display:block; line-height:0; margin:0 -55px 34px -55px}
+    .news-single-photo-mobile img {width:100%}
+}
+
+.documents-item {display:table; width:100%; border-bottom:1px solid #f2f2f2}
+.documents-item-icon {width:40px; padding:23px 20px 23px 0; display:table-cell; vertical-align:top; line-height:0}
+.documents-item-text {display:table-cell; vertical-align:middle; padding:23px 0}
+.documents-item-name a {color:#4c4c4c; text-decoration:none}
+.documents-item-name a:hover {color:#000; text-decoration:underline}
+.documents-item-info {color:#f7ad00}
+
+.projects-item {padding:30px 0; border-bottom:1px solid #e6e6e6}
+.projects-item:first-child {padding-top:17px}
+.projects-item:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.projects-item-preview {float:right; width:33.33%; padding:0 0 0 30px; box-sizing:border-box; line-height:0}
+.projects-item-preview-big {width:66.66%}
+.projects-item-preview img {width:100%}
+.projects-item-preview-video {position:relative; padding:56.25% 0 0 0}
+.projects-item-preview-video iframe {position:absolute; left:0; top:0; width:100%; height:100%}
+.projects-item-text {float:left; width:33.33%}
+.projects-item-name {text-transform:uppercase; font-weight:bold; font-size:16px; color:#000; padding:8px 0 0 0}
+.projects-item-place {color:#000; padding:19px 0 0 0}
+.projects-item-date {color:#f7ad00}
+.projects-item .btn-2 {width:170px; height:33px; line-height:31px; margin:26px 0 0 0}
+
+@media (max-width:1199px) {
+    .projects-item {padding:40px 0}
+    .projects-item-preview {display:none; float:none; width:auto; padding:0}
+    .projects-item-preview:first-child {display:block}
+    .projects-item-text {float:none; width:auto; padding:19px 0 0 0}
+    .projects-item .btn-2 {width:auto}
+}
+
+h1+.projects-item-place {padding:0; margin:-6px 0 0 0}
+
+.project-inside-video {position:relative; padding:56.25% 0 0 0}
+.project-inside-video iframe {position:absolute; left:0; top:0; width:100%; height:100%}
+
+.project-inside-gallery {font-size:0; line-height:0; letter-spacing:-1px; margin:15px -15px}
+.project-inside-gallery-item {display:inline-block; vertical-align:top; padding:15px; box-sizing:border-box; width:33.33%}
+.project-inside-gallery-item img {width:100%}
+
+@media (max-width:1199px) {
+    .project-inside-video {margin:0 -55px; padding-top:calc(56.25% + 62px)}
+    .project-inside-gallery-item  {width:50%}
 }

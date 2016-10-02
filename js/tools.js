@@ -147,7 +147,7 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('.detail-gallery-max a').fancybox({
+    $('.detail-gallery-max a, .project-inside-gallery-item a').fancybox({
         tpl : {
             closeBtn : '<a title="Закрыть" class="fancybox-item fancybox-close" href="javascript:;"></a>',
             next     : '<a title="Следующая" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
