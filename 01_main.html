@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>350 ЖБИ</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <div class="top-menu">
+                            <ul>
+                                <li class="with-submenu">
+                                    <a href="#">О предприятии</a>
+                                    <ul>
+                                        <li><a href="#">О компании</a></li>
+                                        <li><a href="#">Каталог</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Производство</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Партнерам</a></li>
+                                <li class="with-submenu">
+                                    <a href="#">Информация</a>
+                                    <ul>
+                                        <li><a href="#">О компании</a></li>
+                                        <li><a href="#">Каталог</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Производство</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn-1 top-cart">2 товара</a>
+
+                        <div class="top-search">
+                            <a href="#" class="top-search-link"></a>
+                            <form action="#" method="post">
+                                <div class="form-input"><input type="text" name="search" value="" placeholder="поиск по сайту" /></div>
+                                <div class="form-submit"><input type="submit" value="" /></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="logo"><img src="images/logo.png" alt="" width="242" height="66" /></div>
+                    <div class="logo-oboronstroy"><a href="#"><img src="images/logo-oboronstroy.png" alt="" width="70" height="73" /></a></div>
+                    <div class="logo-umto"><a href="#"><img src="images/logo-umto.png" alt="" width="70" height="65" /></a></div>
+                    <div class="header-btns">
+                        <a href="#" class="btn-download">Cкачать каталог</a>
+                        <a href="#" class="btn-order">Отправить заявку</a>
+                    </div>
+                    <div class="header-contacts">
+                        <div class="header-phone">+7 (423) 263-05-01</div>
+                        <div class="header-schedule">Ежедневно с 9.00 до 18.00</div>
+                        <div class="header-callback">
+                            <a href="#" class="header-callback-link"><span>заказать звонок</span></a>
+                            <div class="header-callback-window">
+                                <form action="#" method="post">
+                                    <div class="form-row">
+                                        <div class="form-label">Ваше имя</div>
+                                        <div class="form-field">
+                                            <div class="form-input"><input type="text" name="name" value="" placeholder="Василий Петров" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-label">Контактный телефон</div>
+                                        <div class="form-field">
+                                            <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" placeholder="+7 (___) ___-__-__" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-submit"><input type="submit" value="ок" class="btn-1" /></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Гарантия и сервис</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="mobile-menu-link"></a>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Гарантия и сервис</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">350 ЖБИ<span></span></a>
+                                <ul>
+                                    <li><a href="#">О предприятии</a></li>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Производство</a></li>
+                                    <li><a href="#">Проекты</a></li>
+                                    <li><a href="#">Покупателям</a></li>
+                                    <li><a href="#">Работа у нас</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Партнерам<span></span></a>
+                                <ul>
+                                    <li><a href="#">О предприятии</a></li>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Производство</a></li>
+                                    <li><a href="#">Проекты</a></li>
+                                    <li><a href="#">Покупателям</a></li>
+                                    <li><a href="#">Работа у нас</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Информация<span></span></a>
+                                <ul>
+                                    <li><a href="#">О предприятии</a></li>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Производство</a></li>
+                                    <li><a href="#">Проекты</a></li>
+                                    <li><a href="#">Покупателям</a></li>
+                                    <li><a href="#">Работа у нас</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- slider -->
+                <div class="slider">
+                    <div class="slider-wrap">
+                        <div class="slider-content">
+                            <ul>
+                                <li style="background-image:url(files/slider.jpg)">
+                                    <div class="slider-inner">
+                                        <div class="slider-title">
+                                            <div class="slider-title-number">0</div>
+                                            <div class="slider-title-number">1</div>
+                                            <div class="slider-title-text">Железобетонные изделия серии КУБ 2,5</div>
+                                        </div>
+                                        <div class="slider-text">Использование системы КУБ-2,5 также позволяет минимизировать затраты и снизить себестоимость строительства, а соответственно, сделать квартиры или коммерческие площади более доступными по цене для покупателей.</div>
+                                        <div class="more-link"><a href="#">детальная информация</a></div>
+                                        <div class="slider-img-mobile"><img src="files/slider.jpg" alt="" /></div>
+                                    </div>
+                                </li>
+                                <li style="background-image:url(files/catalogue-banner.jpg)">
+                                    <div class="slider-inner">
+                                        <div class="slider-title">
+                                            <div class="slider-title-number">0</div>
+                                            <div class="slider-title-number">2</div>
+                                            <div class="slider-title-text">Строительство</div>
+                                        </div>
+                                        <div class="slider-text">Универсальная конструктивная система сборно-монолитного безригельного каркаса, самая современная строительная технология, рассчитанная для климатических зон с сейсмостойкостью до 9 баллов включительно, способная изменить методы, сроки и стоимость строительства.</div>
+                                        <div class="more-link"><a href="#">детальная информация</a></div>
+                                        <div class="slider-img-mobile"><img src="files/slider-2-mobile.jpg" alt="" /></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slider-ctrl"></div>
+                    </div>
+                </div>
+                <!-- slider END -->
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="content-wrap">
+
+                            <!-- main hits -->
+                            <div class="main-hits">
+                                <div class="main-header">
+                                    <h2>Популярная продукция</h2>
+                                    <div class="more-link"><a href="#">Весь каталог</a></div>
+                                </div>
+                                <div class="main-hits-content">
+                                    <div class="main-hits-catalogue">
+                                        <!-- catalogue -->
+                                        <div class="catalogue catalogue-recommend">
+
+                                            <!-- catalogue section -->
+                                            <div class="catalogue-section">
+                                                <div class="catalogue-section-inner">
+                                                    <a href="#">
+                                                        <div class="catalogue-section-photo"><div class="catalogue-section-photo-inner"><img src="files/recommend-1.jpg" alt="" /></div></div>
+                                                        <div class="catalogue-section-text">
+                                                            <div class="catalogue-section-number"></div>
+                                                            <div class="catalogue-section-title">Кольца стеновые</div>
+                                                        </div>
+                                                        <div class="catalogue-section-series">Серия 3.900.1-14 - ГОСТ 8020-9</div>
+                                                    </a>
+                                                    <div class="catalogue-section-order"><a href="windows/basket.html" class="btn-1">заказать</a></div>
+                                                </div>
+                                            </div>
+                                            <!-- catalogue section END -->
+
+                                            <!-- catalogue section -->
+                                            <div class="catalogue-section">
+                                                <div class="catalogue-section-inner">
+                                                    <a href="#">
+                                                        <div class="catalogue-section-photo"><div class="catalogue-section-photo-inner"><img src="files/recommend-2.jpg" alt="" /></div></div>
+                                                        <div class="catalogue-section-text">
+                                                            <div class="catalogue-section-number"></div>
+                                                            <div class="catalogue-section-title">Плиты перекрытия</div>
+                                                        </div>
+                                                        <div class="catalogue-section-series">Серия 3.900.1 - ГОСТ 8020-90</div>
+                                                    </a>
+                                                    <div class="catalogue-section-order"><a href="windows/basket.html" class="btn-1">заказать</a></div>
+                                                </div>
+                                            </div>
+                                            <!-- catalogue section END -->
+
+                                            <!-- catalogue section -->
+                                            <div class="catalogue-section">
+                                                <div class="catalogue-section-inner">
+                                                    <a href="#">
+                                                        <div class="catalogue-section-photo"><div class="catalogue-section-photo-inner"><img src="files/recommend-3.jpg" alt="" /></div></div>
+                                                        <div class="catalogue-section-text">
+                                                            <div class="catalogue-section-number"></div>
+                                                            <div class="catalogue-section-title">Марши лестничные</div>
+                                                        </div>
+                                                        <div class="catalogue-section-series">Серия 121 - ГОСТ 9818-85</div>
+                                                    </a>
+                                                    <div class="catalogue-section-order"><a href="windows/basket.html" class="btn-1">заказать</a></div>
+                                                </div>
+                                            </div>
+                                            <!-- catalogue section END -->
+
+                                            <div class="main-catalogue-ctrl">
+                                                <div class="catalogue-recommend-ctrl"></div>
+                                                <div class="more-link"><a href="#">Весь каталог</a></div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue END -->
+                                    </div>
+
+                                    <div class="main-hits-side">
+                                        <a href="#" class="main-catalogue-link">
+                                            <div class="main-catalogue-link-title">Каталог продукции 2016</div>
+                                            <div class="main-catalogue-link-text">Издения нашего производства: железо-бетонные изделия и система КУБ-2,5</div>
+                                            <div class="main-catalogue-link-icon">Cкачать каталог</div>
+                                        </a>
+
+                                        <a href="#" class="main-delivery-link">
+                                            <div class="main-delivery-link-title">Доставка</div>
+                                            <div class="main-delivery-link-text">Мы предлагаем набор усулуг для&nbsp;удобной доставки</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main hits END -->
+
+                            <!-- main services -->
+                            <div class="main-services">
+                                <div class="main-header">
+                                    <h2>Максимум сервиса для&nbsp;наших&nbsp;клиентов</h2>
+                                </div>
+
+                                <div class="main-services-list">
+                                    <a href="#" class="main-service-1">
+                                        <div class="main-services-inner">
+                                            <div class="main-services-title">Складские услуги</div>
+                                            <div class="main-services-text">Стратегия сегментации нейтрализует медийный канал, учитывая результат предыдущих медиа-кампаний.</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="main-service-2">
+                                        <div class="main-services-inner">
+                                            <div class="main-services-title">Транспортные услуги</div>
+                                            <div class="main-services-text">Концепция развития допускает ребрендинг. Начальная стадия проведения исследования, вопреки мнению П.Друкера</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="main-service-3">
+                                        <div class="main-services-inner">
+                                            <div class="main-services-title">Разгрузочно-погрузочные услуги</div>
+                                            <div class="main-services-text">По мнению ведущих маркетологов, эффективность действий индуцирует из ряда вон выходящий анализ рыночных цен.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- main services END -->
+
+                            <!-- main partners -->
+                            <div class="main-partners">
+                                <div class="main-header">
+                                    <h2>Наши партнёры</h2>
+                                </div>
+                                <div class="main-partner-list">
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-1.png" alt="" /></a></div>
+                                    <div class="main-partner-sep"><div></div></div>
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-2.png" alt="" /></a></div>
+                                    <div class="main-partner-sep"><div></div></div>
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-3.png" alt="" /></a></div>
+                                    <div class="main-partner-sep"><div></div></div>
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-4.png" alt="" /></a></div>
+                                    <div class="main-partner-sep"><div></div></div>
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-5.png" alt="" /></a></div>
+                                    <div class="main-partner-sep"><div></div></div>
+                                    <div class="main-partner-item"><a href="#"><img src="files/partner-6.png" alt="" /></a></div>
+                                </div>
+                            </div>
+                            <!-- main partners END -->
+
+                            <!-- main news -->
+                            <div class="main-news">
+                                <div class="main-header">
+                                    <h2>Новости</h2>
+                                    <div class="more-link"><a href="#">Все новости</a></div>
+                                </div>
+                                <div class="main-news-list">
+                                    <div class="main-news-item">
+                                        <div class="main-news-item-title"><a href="#">Качество производства по ГОСТ или по техническим условиям (ТУ)?</a></div>
+                                        <div class="main-news-item-anonce">
+                                            <p>Разница между качеством производства по ГОСТ и производства по техническим условиям (ТУ) иногда не принимается во внимание при принятии решения о выборе поставщика железобетонных и строительных материалов.</p>
+                                            <p>Несоблюдение установленных стандартов в технических условиях производства может привести к быстрому снижению эксплуатационных характеристик и полному разрушению изделий, произведенных по ТУ.</p>
+                                        </div>
+                                        <div class="main-news-item-date">14.06.2016</div>
+                                    </div>
+                                    <div class="main-news-item">
+                                        <div class="main-news-item-title"><a href="#">Государственная Дума обсудила качество жби</a></div>
+                                        <div class="main-news-item-anonce">19 мая 2016 года состоялось заседание Экспертного Совета  при Комитете по земельным отношениям и строительству  Государственной Думы Федерального Собрания Российской Федерации по вопросам производства строительных материалов, машин и оборудования для строительства.</div>
+                                        <div class="main-news-item-date">14.06.2016</div>
+                                    </div>
+                                    <div class="main-news-item">
+                                        <div class="main-news-item-title"><a href="#">ОРГАНИЗАЦИЯ СКЛАДСКОГО ХРАНЕНИЯ ТОВАРОВ НА СКЛАДЕ В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ</a></div>
+                                        <div class="main-news-item-anonce">Организация складского хранения – одна из услуг производственно-логистической компании «1490 УМТО». Наши специалисты помогут разработать и внедрить оптимальную схему размещения вашего товара или груза, с учетом потребностей вашего бизнеса. Мы применяем инновационные технологии хранения, такие, как адресная система и автоматическая радиочастотная идентификация.</div>
+                                        <div class="main-news-item-date">14.06.2016</div>
+                                    </div>
+
+                                    <div class="main-news-bottom">
+                                        <div class="main-news-ctrl"></div>
+                                        <div class="more-link"><a href="#">Все новости</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main news END -->
+
+                        </div>
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- container END -->
+
+                <div class="main-about">
+                    <div class="main-about-inner">
+                        <div class="main-about-content">
+                            <h2>О нашем производстве</h2>
+                            <div class="main-about-text">Компания "350ЖБИ" с 1990 года осуществляет комплексные поставки строительных материалов и комплектацию строительных объектов в Москве, Московской, Смоленской и Тульской областях и областях Центрального федерального округа, а также доставку грузовым и железнодорожным транспортом по регионам России. Возможны поставки товаров оптовыми и мелкими партиями.</div>
+                            <div class="main-about-links">
+                                <a href="#">О предприятии</a>
+                                <a href="#">Проекты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer class="footer-order">
+            <div class="footer-inner">
+
+                <div class="footer-side">
+                    <div class="footer-title">Акционерное общество «1470 Управление материально-технического обеспечения»</div>
+                    <div class="logo-oboronstroy"><a href="#"><img src="images/logo-oboronstroy.png" alt="" width="70" height="73" /></a></div>
+                    <div class="logo-umto"><a href="#"><img src="images/logo-umto.png" alt="" width="70" height="65" /></a></div>
+                </div>
+
+                <div class="footer-contacts">
+                    <div class="footer-contacts-title">Центральный офис АО «1470 УМТО»</div>
+                    <dl>
+                        <dt>Адрес</dt>
+                        <dd>119530, г. Москва, Очаковское шоссе, д. 3 «А»</dd>
+
+                        <dt>Телефон</dt>
+                        <dd>+7 (423) 263-05-01</dd>
+
+                        <dt>Email</dt>
+                        <dd><a href="#">info@350жби.рф</a></dd>
+                    </dl>
+                    <div class="footer-developer">Разработка сайта — <a href="#">Bilingo Digital Agency</a></div>
+                </div>
+
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Производство</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-btns">
+                    <a href="#" class="btn-download">Cкачать каталог</a>
+                    <a href="#" class="btn-order">Отправить заявку</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
