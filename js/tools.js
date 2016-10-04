@@ -85,6 +85,11 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.top-search .form-input input').focus(function(e) {
+        $('.top-search').addClass('open');
+        e.preventDefault();
+    });
+
     $(document).click(function(e) {
         if ($(e.target).parents().filter('.top-search').length == 0 && !$(e.target).hasClass('top-search')) {
             $('.top-search').removeClass('open');
