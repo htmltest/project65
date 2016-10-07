@@ -612,9 +612,6 @@ h1+.detail-series {margin-top:-6px}
 .basket-count .form-input {float:left; position:relative; width:70px}
 .basket-count .form-input input {height:33px; padding-top:4px; padding-bottom:5px; font-weight:normal}
 .basket-count .form-input input:focus {padding-top:3px; padding-bottom:4px}
-.basket-count .form-input a {display:block; cursor:pointer; background:url(../js/jquery-ui-1.11.4.spinner/spinner.png) no-repeat; position:absolute; height:50%; right:1px; width:20px}
-.basket-count .form-input a.plus {top:0; background-position:left top}
-.basket-count .form-input a.minus {bottom:0; background-position:left bottom}
 .basket-count-unit {float:right; line-height:33px}
 .basket-delete {width:21px; padding-left:50px}
 .basket-delete a {display:block; width:21px; height:21px; background:#d9d9d9 url(../images/basket-delete.png) no-repeat center; border-radius:11px}

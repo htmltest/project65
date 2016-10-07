@@ -300,6 +300,10 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.basket-count input').on('spinstop', function(event, ui) {
+        // значение изменилось
+    });
+
 });
 
 $(window).on('resize', function() {
