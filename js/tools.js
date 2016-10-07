@@ -85,6 +85,22 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    var timerSearch = null;
+
+    $('.top-search').hover(
+        function() {
+            $('.top-search').addClass('hover');
+            window.clearTimeout(timerSearch);
+            timerSearch = null;
+        },
+
+        function() {
+            timerSearch = window.setTimeout(function() {
+                $('.top-search').removeClass('hover');
+            }, 1000);
+        }
+    );
+
     $('.top-search .form-input input').focus(function(e) {
         $('.top-search').addClass('open');
         e.preventDefault();

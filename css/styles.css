@@ -228,7 +228,7 @@ label.error:before {content:""; display:block; width:0; height:0; border-right:1
 .top-search-link {display:block; width:39px; height:40px; background:url(../images/top-search.png) no-repeat center}
 .top-search form {display:none; position:absolute; right:0; top:0; width:330px; height:40px; margin:0; padding:0; background:#000}
 @media (min-width:1200px) {
-    .top-search:hover form {display:block}
+    .top-search.hover form {display:block}
 }
 .top-search.open form {display:block}
 .top-search .form-input {margin:0 69px 0 0}
@@ -238,6 +238,7 @@ label.error:before {content:""; display:block; width:0; height:0; border-right:1
 .top-search .form-input input:-ms-input-placeholder {color:#656565}
 .top-search .form-submit {position:absolute; right:30px; top:0; margin:0; padding:0; width:auto}
 .top-search .form-submit input {vertical-align:top; width:39px; height:40px; background:url(../images/top-search.png) no-repeat center; border:none; margin:0; padding:0; outline:none; border-radius:0; -webkit-appearance:none; cursor:pointer}
+.top-search .form-input label.error {display:none !important}
 
 @media (max-width:1199px) {
     .top-search {position:absolute; right:0; top:0; padding:20px 25px 0 0; width:100%; box-sizing:border-box}
@@ -322,6 +323,9 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 .header-callback-window .form-label {display:block; width:auto; padding:13px 0 12px 0; color:#fff; text-transform:none}
 .header-callback-window .form-field {display:block}
 .header-callback-window .form-input input {border:1px solid #fff; background:#fff; font-weight:normal; padding:9px 12px}
+.header-callback-window .form-input input::-webkit-input-placeholder {opacity:1; color:#aaa}
+.header-callback-window .form-input input::-moz-placeholder {opacity:1; color:#aaa}
+.header-callback-window .form-input input:-ms-input-placeholder {opacity:1; color:#aaa}
 .header-callback-window .form-input label.error {display:none !important}
 .header-callback-window .form-submit {float:left; margin:0; width:50px; padding:45px 0 0 0}
 
