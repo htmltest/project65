@@ -449,7 +449,9 @@ nav ul li.active a {color:#fff; background:#000}
 .detail-gallery-big img {vertical-align:middle; max-width:100%}
 .detail-gallery-prev {position:absolute; left:14px; top:50%; margin-top:-8px; display:block; width:9px; height:17px; background:url(../images/detail-gallery-prev.png)}
 .detail-gallery-next {position:absolute; right:14px; top:50%; margin-top:-8px; display:block; width:9px; height:17px; background:url(../images/detail-gallery-next.png)}
-.detail-gallery-zoom {position:absolute; right:10px; top:10px; display:block; width:20px; height:20px; background:url(../images/detail-gallery-zoom.png)}
+.detail-gallery-zoom {position:absolute; left:0; top:0; right:0; bottom:0; display:block}
+.detail-gallery-zoom:after {content:""; position:absolute; right:10px; top:10px; display:block; width:20px; height:20px; background:url(../images/detail-gallery-zoom.png)}
+.detail-gallery-zoom:hover:after {transform:scale(1.1)}
 .detail-gallery-preview ul {margin:0 0 0 -10px}
 .detail-gallery-preview ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .detail-gallery-preview ul li {float:left; padding:0; margin:10px 0 0 10px; width:64px; height:64px; border:1px solid #f5f5f5}
@@ -655,7 +657,7 @@ h1+.detail-series {margin-top:-6px}
 
 .more-link {font-weight:bold; font-size:12px; line-height:20px; text-transform:uppercase; margin:20px 0}
 .more-link a {color:#000; text-decoration:none; border-bottom:3px solid #f7ad00; display:inline-block; vertical-align:top; padding-bottom:4px}
-.more-link a:hover {border:none}
+.more-link a:hover {border-color:transparent}
 
 .search-results-form {margin:36px 0 25px 0; display:table; width:770px}
 .search-results-form .form-row {display:table-cell; vertical-align:top}
