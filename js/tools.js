@@ -122,18 +122,25 @@ $(document).ready(function() {
 
     $('.header-callback-link').click(function(e) {
         $('.header-callback').toggleClass('open');
+        $('.header-callback').removeClass('success');
         e.preventDefault();
     });
 
     $(document).click(function(e) {
         if ($(e.target).parents().filter('.header-callback').length == 0) {
-            $('.header-callback').removeClass('open');
+            $('.header-callback').removeClass('open success');
         }
+    });
+
+    $('.header-callback-success-close').click(function(e) {
+        $('.header-callback').removeClass('open success');
+        $('.header-callback .form-input input').val('');
+        e.preventDefault();
     });
 
     $('body').on('keyup', function(e) {
         if (e.keyCode == 27) {
-            $('.header-callback').removeClass('open');
+            $('.header-callback').removeClass('open success');
         }
     });
 
@@ -354,13 +361,21 @@ function initForm(curForm) {
         curField.removeClass('error');
     });
 
-    curForm.validate({
-        ignore: '',
-        invalidHandler: function(form, validatorcalc) {
-            validatorcalc.showErrors();
-            checkErrors();
-        }
-    });
+    if (curForm.parents().filter('.header-callback-window').length == 1) {
+        curForm.validate({
+            submitHandler: function(form, validatorcalc) {
+                $('.header-callback').addClass('success');
+            }
+        });
+    } else {
+        curForm.validate({
+            ignore: '',
+            invalidHandler: function(form, validatorcalc) {
+                validatorcalc.showErrors();
+                checkErrors();
+            }
+        });
+    }
 }
 
 function checkErrors() {
