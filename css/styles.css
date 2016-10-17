@@ -629,8 +629,8 @@ h1+.detail-series {margin-top:-6px}
 .basket {margin:0}
 .basket form {margin:0}
 .basket td {vertical-align:middle; padding-top:15px; padding-bottom:15px}
-.basket-photo {width:80px}
-.basket-photo-inner {width:70px; height:70px; padding:3px; line-height:70px; text-align:center; border:1px solid #e6e6e6}
+.basket-photo {width:78px}
+.basket-photo-inner {width:70px; height:70px; padding:3px; line-height:0; display:table-cell; vertical-align:middle; text-align:center; border:1px solid #e6e6e6}
 .basket-photo-inner img {vertical-align:middle; max-width:100%; max-height:100%}
 .basket-count {width:100px}
 .basket-count .form-input {float:left; position:relative; width:70px}
