@@ -265,14 +265,18 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
     header {padding-bottom:0; height:99px; border-bottom:1px solid #e5e5e5}
 }
 
-.logo {float:left; line-height:0; padding:40px 0 0 0}
+.logo {float:left; margin:40px 0 0 0; position:relative; color:#000; text-transform:uppercase; font-weight:bold; font-size:9px; line-height:11px}
+.logo a {display:block; position:relative; text-decoration:none; color:#000}
+.logo img {display:block}
+.logo span {display:block; padding:15px 0 0 0}
 .logo-oboronstroy {float:left; line-height:0; padding:30px 0 0 59px}
 .logo-umto {float:left; line-height:0; padding:29px 0 0 29px}
 
 @media (max-width:1199px) {
-    .logo {position:absolute; left:25px; top:84px; padding:0; width:201px; height:54px; background:url(../images/logo-mobile.png)}
-    .logo a {display:block; width:201px; height:54px}
+    .logo {position:absolute; left:25px; top:84px; margin:0; padding:33px 0 0 0; width:200px; background:url(../images/logo-mobile.png) no-repeat; font-size:7.44px}
+    .logo a {display:block; width:200px}
     .logo img {display:none}
+    .logo span {padding:11px 0 0 0}
     .logo-oboronstroy {position:absolute; right:99px; top:81px; width:53px; height:55px; padding:0; background:url(../images/logo-oboronstroy-mobile.png)}
     .logo-oboronstroy a {display:block; width:53px; height:55px}
     .logo-oboronstroy img {display:none}
